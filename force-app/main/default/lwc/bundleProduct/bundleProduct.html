@@ -32,14 +32,14 @@
                   <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">  
                     <div class="slds-tabs_default">
                         <ul class="slds-tabs_default__nav" role="tablist">
-                          <li class="slds-tabs_default__item slds-is-active" title="Item One" role="presentation">
+                          <li class="slds-tabs_default__item slds-is-active" data-id ="tab1" title="Item One" role="presentation" onclick={onAttr}>
                             <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected="false" aria-controls="tab-default-1" id="tab-default-1__item">Product Attribute</a>
                           </li>
-                          <li class="slds-tabs_default__item" title="Item Two" role="presentation">
+                          <li class="slds-tabs_default__item" title="Item Two" data-id ="tab2" role="presentation" onclick={onOpt}>
                             <a class="slds-tabs_default__link" href="#" role="tab" tabindex="-1" aria-selected="true" aria-controls="tab-default-2" id="tab-default-2__item">Product Options</a>
                           </li>
                         </ul>
-                        <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
+                        <div id="tab-default-1" data-id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
                             <label class="slds-form-element__label" for="select-01">Internet Speed</label>
                             <div class="slds-form-element__control">
                             <div class="slds-select_container">
@@ -52,7 +52,7 @@
                             </div>
                             </div>
                         </div>
-                        <div id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">
+                        <div id="tab-default-2" data-id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">
                             <fieldset class="slds-form-element">
                                 <legend class="slds-form-element__legend slds-form-element__label">Checkbox Group Label</legend>
                                 <div class="slds-form-element__control">
@@ -141,22 +141,7 @@
               </div>
               <hr>
               <div class="slds-clearfix"> 
-                  <lightning-button
-                  variant="brand"
-                    
-                      label="Next"
-                      class="slds-float_right"
-                      onclick={handleNext}
-                  >
-              </lightning-button>
-              <lightning-button
-              variant="brand"
                 
-                  label="Back"
-                  class="slds-float_right"
-                  onclick={handleBack}
-              >
-             </lightning-button>
               </div>
         
           </div>

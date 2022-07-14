@@ -1,20 +1,24 @@
 import { LightningElement } from 'lwc';
 
 export default class BundleProduct extends LightningElement {
-    handleNext(){
-        const screenEvent = CustomEvent('nextscreen',{
-            detail:'On next Screen'
-            
-         })
-         
-         this.dispatchEvent(screenEvent)
+   
+      onAttr(){
+        var divblock = this.template.querySelector('[data-id="tab1"]');
+        if(divblock){
+            this.template.querySelector('[data-id="tab1"]').className='slds-tabs_default__item slds-is-active';
+            this.template.querySelector('[data-id="tab2"]').className='slds-tabs_default__item';
+            this.template.querySelector('[data-id="tab-default-1"]').className='slds-tabs_default__content slds-show';
+            this.template.querySelector('[data-id="tab-default-2"]').className='slds-tabs_default__content slds-hide';
+        }     
       }
-      handleBack(){
-        const screenEvent = CustomEvent('backscreen',{
-            detail:'On back Screen'
-            
-         })
-        
-         this.dispatchEvent(screenEvent)
-      }
+
+      onOpt(event){
+        var divblock = this.template.querySelector('[data-id="tab2"]');
+        if(divblock){
+            this.template.querySelector('[data-id="tab2"]').className='slds-tabs_default__item slds-is-active';
+            this.template.querySelector('[data-id="tab1"]').className='slds-tabs_default__item';
+            this.template.querySelector('[data-id="tab-default-2"]').className='slds-tabs_default__content slds-show';
+            this.template.querySelector('[data-id="tab-default-1"]').className='slds-tabs_default__item slds-is-active';
+        }     
+    }
 }
