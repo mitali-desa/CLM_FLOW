@@ -6,7 +6,7 @@ export default class Productconfig extends LightningElement {
             detail:'On next Screen'
             
          })
-    
+         
          this.dispatchEvent(screenEvent)
       }
       handleBack(){
@@ -14,7 +14,7 @@ export default class Productconfig extends LightningElement {
             detail:'On back Screen'
             
          })
-    
+        
          this.dispatchEvent(screenEvent)
       }
 }
