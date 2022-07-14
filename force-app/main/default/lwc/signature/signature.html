@@ -23,6 +23,7 @@
                     </tr>
                   </thead>
                   <tbody>
+                    <tr>
                       <td data-label="File Name">
                           <div class="slds-truncate" title="Cloudhub">File1.pdf</div>
                         </td>
@@ -35,28 +36,44 @@
                         <td data-label="Relationship">
                           <div class="slds-truncate" title="20%">Custom</div>
                         </td>
+                    </tr>
                   </tbody>
                   </table>
           </div>
               <div class="slds-grid">
                   <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">  
-                      <lightning-input type="date" label="From" value="" ></lightning-input>
-                      <lightning-input type="date" label="To" value="" ></lightning-input>
-                      <lightning-input type="text" label="Subject" value="" ></lightning-input>
+                      <label class="slds-form-element__label" for="text-input-id-47">
+                        <abbr class="slds-required" title="required">* </abbr>From</label>
+                      <div class="slds-form-element__control">
+                        <input type="date" id="from" required="" class="slds-input" />
+                      </div>
+                      <label class="slds-form-element__label" for="text-input-id-47">
+                        <abbr class="slds-required" title="required">* </abbr>To</label>
+                      <div class="slds-form-element__control">
+                        <input type="date" id="to" required="" class="slds-input" />
+                      </div>
+                      <label class="slds-form-element__label" for="text-input-id-47">
+                        <abbr class="slds-required" title="required">* </abbr>Subject</label>
+                      <div class="slds-form-element__control">
+                        <input type="text" id="subject" required="" class="slds-input" />
+                      </div>
                       <div class="slds-form-element">
-                          <label class="slds-form-element__label" for="select-01">Email Template</label>
-                          <div class="slds-form-element__control">
-                          <div class="slds-select_container">
-                          <select class="slds-select" id="select-01">
-                          <option value="">Select Email Template</option>
-                          <option>Option One</option>
-                          <option>Option Two</option>
-                          <option>Option Three</option>
-                          </select>
-                          </div>
-                          </div>
-                          </div>
-                      <lightning-textarea label="Body" value="" ></lightning-textarea>
+                        <label class="slds-form-element__label" for="select-01">Email Template</label>
+                        <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                        <select class="slds-select" id="select-01">
+                        <option value="">Select Email Template</option>
+                        <option>Option One</option>
+                        <option>Option Two</option>
+                        <option>Option Three</option>
+                        </select>
+                        </div>
+                        </div>
+                        </div>
+                        <label class="slds-form-element__label" for="textarea-id-01">Body</label>
+                        <div class="slds-form-element__control">
+                          <textarea id="textarea-id-01" placeholder="" class="slds-textarea"></textarea>
+                        </div>
                   </div>
                   <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12"></div>
                   <div class="slds-col slds-size_1-of-1 slds-large-size_5-of-12 slds-p-top_large">
@@ -89,14 +106,6 @@
                   </div>
               </div>
               <hr>
-              <lightning-button
-              variant="brand"
-                 
-                  label="Back"
-                  class="slds-float_right"
-                  onclick={handleBack}
-              >
-          </lightning-button>
               <div class="slds-clearfix"> 
                   <lightning-button
                   variant="brand"  

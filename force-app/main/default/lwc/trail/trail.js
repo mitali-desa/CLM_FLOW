@@ -16,10 +16,16 @@ export default class Trail extends LightningElement {
         this.handleValueChange(value);
     }
 
+    
+    pathHandler(event){
+       console.log(event.currentTarget.id)
+    }
+
+
     //a method called in setter
     handleValueChange(value) {
         console.log(value);
-             let targetId = 'pat-'+this.main+'-42';
+             let targetId = 'pat-'+this.main+'-72';
         console.log(targetId)
         let len = targetId.length;
         let mainTarId = this.main;
