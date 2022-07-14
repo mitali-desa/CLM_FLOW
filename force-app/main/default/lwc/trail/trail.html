@@ -1,0 +1,92 @@
+<template>
+    
+    <div class="slds-path">
+        <div class="slds-grid slds-path__track">
+        <div class="slds-grid slds-path__scroller-container">
+        <div class="slds-path__scroller">
+        <div class="slds-path__scroller_inner">
+        <ul class="slds-path__nav" role="listbox" aria-orientation="horizontal">
+        <li class="slds-path__item slds-is-current slds-is-active " role="presentation" id="pat-1" onclick={pathHandler}>
+        <a aria-selected="true" class="slds-path__link" href="#" id="path-1"  role="option" tabindex="0">
+        <span class="slds-path__stage">
+    
+        <lightning-icon icon-name="utility:check" alternative-text="Approved" title="Approved" aria-hidden="true"></lightning-icon>
+
+      
+        <span class="slds-assistive-text">Current Stage:</span>
+        </span>
+        <span class="slds-path__title">Opportunity Creation</span>
+        </a>
+        </li>
+        <li class="slds-path__item slds-is-incomplete" role="presentation" id="pat-2" onclick={pathHandler}>
+        <a aria-selected="false" class="slds-path__link" href="#" id="path-2" role="option" tabindex="-1">
+        <span class="slds-path__stage">
+        <lightning-icon icon-name="utility:check" alternative-text="Approved" title="Approved" aria-hidden="true"></lightning-icon>
+
+        </span>
+        <span class="slds-path__title">Agreement Creation</span>
+        </a>
+        </li>
+        <li class="slds-path__item slds-is-incomplete" role="presentation" id="pat-3" onclick={pathHandler}>
+        <a aria-selected="false" class="slds-path__link" href="#" id="path-3" role="option" tabindex="-1">
+        <span class="slds-path__stage">
+                <lightning-icon icon-name="utility:check" alternative-text="Approved" title="Approved" aria-hidden="true"></lightning-icon>
+
+        </span>
+        <span class="slds-path__title">Catalog</span>
+        </a>
+        </li>
+        <li class="slds-path__item slds-is-incomplete" role="presentation" id="pat-4" onclick={pathHandler}>
+        <a aria-selected="false" class="slds-path__link" href="#" id="path-4" role="option" tabindex="-1">
+        <span class="slds-path__stage">
+                <lightning-icon icon-name="utility:check" alternative-text="Approved" title="Approved" aria-hidden="true"></lightning-icon>
+
+        </span>
+        <span class="slds-path__title">Product Configuration</span>
+        </a>
+        </li>
+        <li class="slds-path__item slds-is-incomplete" role="presentation" id="pat-5" onclick={pathHandler}>
+            <a aria-selected="false" class="slds-path__link" href="#" id="path-5" role="option" tabindex="-1">
+            <span class="slds-path__stage">
+                <lightning-icon icon-name="utility:check" alternative-text="Approved" title="Approved" aria-hidden="true"></lightning-icon>
+
+            </span>
+            <span class="slds-path__title">Cart</span>
+            </a>
+            </li>
+            <li class="slds-path__item slds-is-incomplete" role="presentation" id="pat-6" onclick={pathHandler}>
+                <a aria-selected="false" class="slds-path__link" href="#" id="path-6" role="option" tabindex="-1">
+                <span class="slds-path__stage">
+                    <lightning-icon icon-name="utility:check" alternative-text="Approved" title="Approved" aria-hidden="true"></lightning-icon>
+
+                </span>
+                <span class="slds-path__title">Summary</span>
+                </a>
+                </li>
+                <li class="slds-path__item slds-is-incomplete" role="presentation" id="pat-7" onclick={pathHandler}>
+                    <a aria-selected="false" class="slds-path__link" href="#" id="path-7" role="option" tabindex="-1">
+                    <span class="slds-path__stage">
+                        <lightning-icon icon-name="utility:check" alternative-text="Approved" title="Approved" aria-hidden="true"></lightning-icon>
+
+                    </span>
+                    <span class="slds-path__title">Review</span>
+                    </a>
+             </li>
+        <li class="slds-path__item slds-is-incomplete" role="presentation" id="pat-8" onclick={pathHandler}>
+        <a aria-selected="false" class="slds-path__link" href="#" id="path-8" role="option" tabindex="-1">
+        <span class="slds-path__stage">
+                <lightning-icon icon-name="utility:check" alternative-text="Approved" title="Approved" aria-hidden="true"></lightning-icon>
+
+        </span>
+        <span class="slds-path__title">Signatures</span>
+        </a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+       
+        </div>
+        </div>
+       
+</template>

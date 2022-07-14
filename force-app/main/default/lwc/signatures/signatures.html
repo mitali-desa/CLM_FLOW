@@ -1,0 +1,121 @@
+<template>
+    <lightning-card>
+      <div class="slds-p-bottom_large slds-p-left_large slds-p-right_large">
+          <div class="slds-grid slds-p-bottom_large">
+              <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                  <thead>
+                      <tr class="slds-line-height_reset" >
+                          <th class="" colspan="4" style="text-align: center;background-color: rgb(102 150 187);">Select Documents</th>
+                      </tr>
+                    <tr class="slds-line-height_reset" >
+                      <th class="" scope="col">
+                        <div class="slds-truncate" title="File Name">File Name</div>
+                      </th>
+                      <th class="" scope="col">
+                        <div class="slds-truncate" title="Size">Size</div>
+                      </th>
+                      <th class="" scope="col">
+                        <div class="slds-truncate" title="Last Modified Date">Last Modified Date</div>
+                      </th>
+                      <th class="" scope="col">
+                        <div class="slds-truncate" title="Relationship">Relationship</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <td data-label="File Name">
+                          <div class="slds-truncate" title="Cloudhub">File1.pdf</div>
+                        </td>
+                        <td data-label="Size">
+                          <div class="slds-truncate" title="4/14/2015">4 MB</div>
+                        </td>
+                        <td data-label="Last Modified Date">
+                          <div class="slds-truncate" title="Prospecting">4/14/2015</div>
+                        </td>
+                        <td data-label="Relationship">
+                          <div class="slds-truncate" title="20%">Custom</div>
+                        </td>
+                  </tbody>
+                  </table>
+          </div>
+              <div class="slds-grid">
+                  <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">  
+                      <lightning-input type="date" label="From" value="" ></lightning-input>
+                      <lightning-input type="date" label="To" value="" ></lightning-input>
+                      <lightning-input type="text" label="Subject" value="" ></lightning-input>
+                      <div class="slds-form-element">
+                          <label class="slds-form-element__label" for="select-01">Email Template</label>
+                          <div class="slds-form-element__control">
+                          <div class="slds-select_container">
+                          <select class="slds-select" id="select-01">
+                          <option value="">Select Email Template</option>
+                          <option>Option One</option>
+                          <option>Option Two</option>
+                          <option>Option Three</option>
+                          </select>
+                          </div>
+                          </div>
+                          </div>
+                      <lightning-textarea label="Body" value="" ></lightning-textarea>
+                  </div>
+                  <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12"></div>
+                  <div class="slds-col slds-size_1-of-1 slds-large-size_5-of-12 slds-p-top_large">
+                      <article class="slds-card slds-border_left" style="border: 1px ridge !important;">
+                          <div class="slds-card__header slds-grid">
+                          <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                          <div class="slds-media__figure">
+                          <span class="slds-icon_container slds-icon-standard-account" title="account">
+                         
+                          </span>
+                          </div>
+                          <div class="slds-media__body">
+                          <h2 class="slds-card__header-title">
+                          <span>Selected Attachements</span>
+                        
+                          </h2>
+                          </div>
+                          <div class="slds-no-flex">
+                          <button class="slds-button slds-button_neutral">Add More</button>
+                          </div>
+                          </header>
+                          </div>
+                          <hr>
+                          <div class="slds-card__body slds-card__body_inner">File1.pdf</div>
+                          <div class="slds-card__body slds-card__body_inner">File2.pdf</div>
+                          <div class="slds-card__body slds-card__body_inner">File3.pdf</div>
+                          <footer class="slds-card__footer">
+                          </footer>
+                          </article>
+                  </div>
+              </div>
+              <hr>
+              <lightning-button
+              variant="brand"
+                 
+                  label="Back"
+                  class="slds-float_right"
+                  onclick={handleBack}
+              >
+          </lightning-button>
+              <div class="slds-clearfix"> 
+                  <lightning-button
+                  variant="brand"  
+                  type="cancel"
+                  name="cancel"
+                  label="Cancel"
+                  >
+                  </lightning-button>
+                      <lightning-button
+                      variant="brand"
+                          type="submit"
+                          name="submit"
+                          label="Submit"
+                          class="slds-float_right"
+                      >
+                  </lightning-button>
+              </div>
+        
+          </div>
+      </lightning-card>
+    
+  </template>
