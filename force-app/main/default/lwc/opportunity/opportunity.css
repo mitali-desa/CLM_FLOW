@@ -1,4 +1,35 @@
-.oppo-container{
-    margin-top: 30px;
-    padding-right: 25px;
+h1 {
+    font-size: medium;
+    display: block;
+    background: rgb(151, 213, 245);
+    text-align: center;
+}
+
+input {
+    width: 70%;
+}
+
+textarea {
+    width: 70%;
+}
+
+select {
+    width: 70%;
+}
+
+tr,
+td {
+    padding: 15px;
+}
+
+.rightside-button {
+    position: absolute;
+    bottom: 10px;
+    right: 2%;
+}
+
+.leftside-button {
+    position: absolute;
+    bottom: 10px;
+    left: 2%;
 }
