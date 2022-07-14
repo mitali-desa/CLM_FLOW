@@ -1,0 +1,165 @@
+<template>
+    <lightning-card>
+      <div class="slds-p-bottom_large slds-p-left_large slds-p-right_large">
+          <div class="slds-grid slds-p-bottom_large">
+              <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                  <thead>
+                      <tr class="slds-line-height_reset" >
+                          <th class="" colspan="4" style="text-align: center;background-color: rgb(102 150 187);">Account Details</th>
+                      </tr>
+                    <tr class="slds-line-height_reset" >
+                      <th class="" scope="col" colspan="2">
+                        <div class="slds-truncate" title="Account Name" >Account Name</div>
+                      </th>
+                      <th class="" scope="col" colspan="2">
+                        <div class="slds-truncate" title="Primary Contact Name" >Primary Contact Name</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                      <td data-label="Account Name" colspan="2">
+                          <div class="slds-truncate" title="Cloudhub">Acme</div>
+                        </td>
+                        <td data-label="Primary Contact Name" colspan="2">
+                          <div class="slds-truncate" title="4/14/2015">Henry Johnson</div>
+                        </td>
+                    </tr>
+                  </tbody>
+                  </table>
+          </div>
+              <div class="slds-grid slds-wrap">
+                  <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">  
+                    <div class="slds-tabs_default">
+                        <ul class="slds-tabs_default__nav" role="tablist">
+                          <li class="slds-tabs_default__item slds-is-active" title="Item One" role="presentation">
+                            <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected="false" aria-controls="tab-default-1" id="tab-default-1__item">Product Attribute</a>
+                          </li>
+                          <li class="slds-tabs_default__item" title="Item Two" role="presentation">
+                            <a class="slds-tabs_default__link" href="#" role="tab" tabindex="-1" aria-selected="true" aria-controls="tab-default-2" id="tab-default-2__item">Product Options</a>
+                          </li>
+                        </ul>
+                        <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
+                            <label class="slds-form-element__label" for="select-01">Internet Speed</label>
+                            <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                            <select class="slds-select" id="select-01">
+                            <option value="">Select</option>
+                            <option>10 MBPS</option>
+                            <option>50 MBPS</option>
+                            <option>100 MBPS</option>
+                            </select>
+                            </div>
+                            </div>
+                        </div>
+                        <div id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">
+                            <fieldset class="slds-form-element">
+                                <legend class="slds-form-element__legend slds-form-element__label">Checkbox Group Label</legend>
+                                <div class="slds-form-element__control">
+                                  <div class="slds-checkbox">
+                                    <input type="checkbox" name="options" id="checkbox-unique-id-82" value="checkbox-unique-id-82"/>
+                                    <label class="slds-checkbox__label" for="checkbox-unique-id-82">
+                                      <span class="slds-checkbox_faux"></span>
+                                      <span class="slds-form-element__label">Checkbox Label</span>
+                                    </label>
+                                  </div>
+                                  <div class="slds-checkbox">
+                                    <input type="checkbox" name="options" id="checkbox-unique-id-83" value="checkbox-unique-id-83" />
+                                    <label class="slds-checkbox__label" for="checkbox-unique-id-83">
+                                      <span class="slds-checkbox_faux"></span>
+                                      <span class="slds-form-element__label">Checkbox Label</span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </fieldset>
+                        </div>
+                       
+                      </div>
+                      <div class="slds-p-top_xx-large">
+                      <article class="slds-card slds-border_left" style="border: 1px ridge !important;">
+                        <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                        <span class="slds-icon_container slds-icon-standard-account" title="account">
+                        </span>
+                        </div>
+                        <div class="slds-media__body">
+                        <h2 class="slds-card__header-title">
+                        <span class="slds-align_absolute-center">Similar Products</span>
+                        </h2>
+                        </div>
+                        </header>
+                        </div>
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                            <thead>
+                              <tr class="slds-line-height_reset" >
+                                <th class="" scope="col" colspan="2">
+                                  <div class="slds-truncate" title="Product Image" >Product Image</div>
+                                </th>
+                                <th class="" scope="col" colspan="2">
+                                    <div class="slds-truncate" title="Product Name" >Product Name</div>
+                                  </th>
+                                <th class="" scope="col" colspan="2">
+                                  <div class="slds-truncate" title="Action" >Action</div>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Product Image" colspan="2">
+                                            <div class="slds-truncate" title="dell"><img src="https://thumbs.dreamstime.com/z/laptop-computer-displaying-logo-dell-poznan-pol-jan-american-multinational-technology-company-develops-sells-repairs-172271225.jpg" width="100" height="100"></div>
+                                    </td>
+                                    <td data-label="Product Name" colspan="2">
+                                        <div class="slds-truncate" title="dell">Dell</div>
+                                    </td>
+                                    <td data-label="Action" colspan="2">
+                                        <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive">Move to cart</button></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Product Image" colspan="2">
+                                            <div class="slds-truncate" title="dell"><img src="https://5.imimg.com/data5/SO/UH/MY-14352828/hp-laptop-500x500.jpg" width="100" height="100"></div>
+                                    </td>
+                                    <td data-label="Product Name" colspan="2">
+                                        <div class="slds-truncate" title="hp">Hp</div>
+                                    </td>
+                                    <td data-label="Action" colspan="2">
+                                        <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive">Move to cart</button></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        <footer class="slds-card__footer">
+                        </footer>
+                        </article>
+                        </div>
+                  </div>
+                  <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12"></div>
+                  <div class="slds-col slds-size_1-of-1 slds-large-size_5-of-12 slds-p-top_large">
+                     <c-mini-cart></c-mini-cart>
+                  </div>
+              </div>
+              <hr>
+              <div class="slds-clearfix"> 
+                  <lightning-button
+                  variant="brand"
+                    
+                      label="Next"
+                      class="slds-float_right"
+                      onclick={handleNext}
+                  >
+              </lightning-button>
+              <lightning-button
+              variant="brand"
+                
+                  label="Back"
+                  class="slds-float_right"
+                  onclick={handleBack}
+              >
+             </lightning-button>
+              </div>
+        
+          </div>
+      </lightning-card>
+    
+  </template>
