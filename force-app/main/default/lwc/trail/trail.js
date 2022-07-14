@@ -5,7 +5,7 @@ export default class Trail extends LightningElement {
     isSummary = false
     isSign = false;
     main; 
-
+    prefix;
  
     @api get name() {
         return this.main;
@@ -16,16 +16,20 @@ export default class Trail extends LightningElement {
         this.handleValueChange(value);
     }
 
-    
-    pathHandler(event){
-       console.log(event.currentTarget.id)
-    }
+    renderedCallback(){
+        const element = this.template.querySelector("[name=test]");
+        this.prefix = String(element.id)
+        
+        let len = this.prefix.length
+        this.prefix = this.prefix.substring(5,len)
+        console.log(this.prefix)
 
+    }
 
     //a method called in setter
     handleValueChange(value) {
         console.log(value);
-             let targetId = 'pat-'+this.main+'-72';
+        let targetId = 'pat-'+this.main+this.prefix;
         console.log(targetId)
         let len = targetId.length;
         let mainTarId = this.main;
