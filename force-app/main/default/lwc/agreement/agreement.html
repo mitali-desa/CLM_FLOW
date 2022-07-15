@@ -1,18 +1,116 @@
+<!-- sldsValidatorIgnore -->
 <template>
-    <h1>Agreement</h1>
-    <lightning-button
-                    variant="brand"
-                       
-                        label="Next"
-                        class="slds-float_right"
-                        onclick={handleNext}
-                    >
-                </lightning-button>
-                <lightning-button
-                variant="brand"
-                    label="Back"
-                    class="slds-float_right"
-                    onclick={handleBack}
-                >
-            </lightning-button>
+    <!--Agreement Creation-->
+    <lightning-card>
+        <h1>Agreement Creation</h1><br>
+        <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-2">
+
+                <table>
+                    <tr>
+                        <td>
+                            <label class="slds-form-element__label" for="agreement-name">
+                                <b>Agreement Name</b></label>
+                        </td>
+                        <td>
+                            <input type="text" id="agreement-name" class="slds-input" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="slds-form-element__label" for="end-date">
+                                <b>End Date</b></label>
+                        </td>
+                        <td>
+                            <input type="date" id="end-date" class="slds-input" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="slds-form-element__label" for="description">
+                                <b>Description</b></label>
+                        </td>
+                        <td>
+                            <textarea id="agr_description" class="slds-textarea"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="slds-form-element__label" for="language">
+                                <b>Language</b></label>
+                        </td>
+                        <td>
+                            <select name="language" id="language">
+                                <option value="english">English</option>
+                                <option value="french">French</option>
+                                <option value="spanish">Spanish</option>
+                                <option value="german">German</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <button class="slds-button slds-button_brand" onclick={handleBack}>Back</button>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">
+                <table>
+                    <tr>
+                        <td>
+                            <label class="slds-form-element__label" for="start-date">
+                                <b>Start Date</b></label>
+                        </td>
+                        <td>
+                            <input type="date" id="start-date" class="slds-input" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="slds-form-element__label" for="agreement-category">
+                                <b>Agreement Category</b></label>
+                        </td>
+                        <td>
+                            <select name="agreemeent-category" id="agreemeent-category">
+                                <option value="sales">Sales</option>
+                                <option value="procurement">Procurement</option>
+                                <option value="corporate">Corporate</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="slds-form-element__label" for="special-terms">
+                                <b>Special Terms</b></label>
+                        </td>
+                        <td>
+                            <textarea id="special-terms" class="slds-textarea"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="slds-form-element__label" for="region">
+                                <b>Region</b></label>
+                        </td>
+                        <td>
+                            <select name="region" id="region">
+                                <option value="us">United States</option>
+                                <option value="pak">Pakistan</option>
+                                <option value="in">India</option>
+                                <option value="sa">South Africa</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <button class="slds-button slds-button_brand rightside-button" onclick={handleNext}>Next</button>
+            </div>
+        </div>
+    </lightning-card>
 </template>
