@@ -1,168 +1,333 @@
 <template>
-    <div class="main-cont">
-    <div class="slds-grid account-cont">
-        <div class="slds-col slds-size_4-of-12">
-            Account Name
+  <div class="main-cont">
+  <div class="slds-grid account-cont">
+      <div class="slds-col slds-size_4-of-12">
+          Account Name
 
-        </div>
-        <div>
-                Primary Contact Name
-        </div>  
+      </div>
+      <div>
+              Primary Contact Name
+      </div>  
 
-    </div>
+  </div>
 
-    <div class="slds-grid catalog-cont">
-        <div class="slds-col slds-size_3-of-12 slds-box slds-theme_shade category-box">
-            <h1  class="slds-text-heading_small">All Categories</h1>
-            <ul class="slds-has-block-links_space">
-                  <li>
-                    <a href="#">List Item</a>
-                  </li>
-                  <li>
-                    <a href="#">List Item</a>
-                  </li>
-            </ul>
+  <div class="slds-grid catalog-cont">
+      <div class="slds-col slds-size_3-of-12 slds-box slds-theme_shade category-box">
+          <h1  class="slds-text-heading_small">All Categories</h1>
+          <ul class="slds-has-block-links_space">
+                <li>
+                  <a href="#">List Item</a>
+                </li>
+                <li>
+                  <a href="#">List Item</a>
+                </li>
+          </ul>
 
-        </div>
-        <div class="slds-col slds-size_9-of-12">
-            <div style="background-color: #0076d3; width:90%; padding-bottom:5px; padding-top:5px;">
-            <h1  class="slds-text-heading_small slds-text-align_center"> Standalone Products</h1>  </div>
-            <div style="margin-top: 18px;">
-             <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
-              <thead>
-                <tr class="slds-line-height_reset" >
-                  <th class="" scope="col" colspan="2">
-                    <div class="slds-truncate" title="Product Image" >Product Image</div>
-                  </th>
-                  <th class="" scope="col" colspan="2">
-                      <div class="slds-truncate" title="Product Name" >Product Name</div>
-                    </th>
-                    <th class="" scope="col" colspan="2">
-                        <div class="slds-truncate" title="Charge Type" >Charge Type</div>
-                      </th>
-                  <th class="" scope="col" colspan="2">
-                    <div class="slds-truncate" title="Action" >Action</div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td data-label="Product Image" colspan="2">
-                              <div class="slds-truncate" title="dell"><img src="https://thumbs.dreamstime.com/z/laptop-computer-displaying-logo-dell-poznan-pol-jan-american-multinational-technology-company-develops-sells-repairs-172271225.jpg" width="100" height="100"></div>
-                      </td>
-                      <td data-label="Product Name" colspan="2">
-                          <div class="slds-truncate slds-text-heading_small" title="dell">Dell</div>
-                      </td>
-                      <td data-label="Charge Type" colspan="2">
-                        <div class="slds-truncate" title="dell">Test</div>
-                    </td>
-                      <td data-label="Action" colspan="2">
-                          <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td data-label="Product Image" colspan="2">
-                              <div class="slds-truncate" title="dell"><img src="https://5.imimg.com/data5/SO/UH/MY-14352828/hp-laptop-500x500.jpg" width="100" height="100"></div>
-                      </td>
-                      <td data-label="Product Name" colspan="2">
-                          <div class="slds-truncate slds-text-heading_small" title="hp">Hp</div>
-                      </td>
-                      <td data-label="Charge Type" colspan="2">
-                        <div class="slds-truncate " title="dell">Test</div>
-                    </td>
-                      <td data-label="Action" colspan="2">
-                          <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
-                      </td>
-                  </tr>
-              </tbody>
-              </table>
+      </div>
+      <div class="slds-col slds-size_9-of-12">
+          <div class="slds-box slds-theme_shade slds-theme_alert-texture" style="background-color: #1987db; width:90%; padding-bottom:5px; padding-top:5px;">
+          <h1  class="slds-text-heading_small slds-text-align_center">  Top Products</h1>  </div>
+          <div style="margin-top: 18px;">
+
+
+
+            <div class="slds-grid" style="width: 90%;">
+              <div class="slds-col">
+                <article style="width: 80%;" class="slds-card">
+                  <div class="slds-card__header slds-grid">
+                  <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                  <div class="slds-media__figure">
+                  <span class="slds-icon_container slds-icon-standard-account" title="account">
+                  <img src="https://thumbs.dreamstime.com/z/laptop-computer-displaying-logo-dell-poznan-pol-jan-american-multinational-technology-company-develops-sells-repairs-172271225.jpg" width="155" height="100">
+                  </span>
+                  </div>
+                  </header>
+                  </div>
+                  <div class="slds-card__body slds-card__body_inner">Anything can go into the card body</div>
+                  <footer class="slds-card__footer">
+                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+
+                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                  </footer>
+                  </article>
+              </div>
+              <div class="slds-col ">
+                <article style="width: 80%;" class="slds-card">
+                  <div class="slds-card__header slds-grid">
+                  <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                  <div class="slds-media__figure">
+                  <span class="slds-icon_container slds-icon-standard-account" title="account">
+                  <img src="https://thumbs.dreamstime.com/z/laptop-computer-displaying-logo-dell-poznan-pol-jan-american-multinational-technology-company-develops-sells-repairs-172271225.jpg" width="155" height="100">
+                  </span>
+                  </div>
+                  </header>
+                  </div>
+                  <div class="slds-card__body slds-card__body_inner">Anything can go into the card body</div>
+                  <footer class="slds-card__footer">
+                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+
+                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                  </footer>
+                  </article>
+              </div>
+              <div class="slds-col">
+                <article style="width: 80%;" class="slds-card">
+                  <div class="slds-card__header slds-grid">
+                  <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                  <div class="slds-media__figure">
+                  <span class="slds-icon_container slds-icon-standard-account" title="account">
+                  <img src="https://thumbs.dreamstime.com/z/laptop-computer-displaying-logo-dell-poznan-pol-jan-american-multinational-technology-company-develops-sells-repairs-172271225.jpg" width="155" height="100">
+                  </span>
+                  </div>
+                  </header>
+                  </div>
+                  <div class="slds-card__body slds-card__body_inner">Anything can go into the card body</div>
+                  <footer class="slds-card__footer">
+                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+
+                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                  </footer>
+                  </article>
+              </div>
+              <div class="slds-col">
+                <article style="width: 80%;" class="slds-card">
+                  <div class="slds-card__header slds-grid">
+                  <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                  <div class="slds-media__figure">
+                  <span class="slds-icon_container slds-icon-standard-account" title="account">
+                  <img src="https://thumbs.dreamstime.com/z/laptop-computer-displaying-logo-dell-poznan-pol-jan-american-multinational-technology-company-develops-sells-repairs-172271225.jpg" width="155" height="100">
+                  </span>
+                  </div>
+                  </header>
+                  </div>
+                  <div class="slds-card__body slds-card__body_inner">Anything can go into the card body</div>
+                  <footer class="slds-card__footer">
+                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+
+                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                  </footer>
+                  </article>
+              </div>
+
             </div>
-        </div>  
 
-    </div>
-
-
-
-
-
-
-    <div class="slds-grid catalog-cont">
-        <div class="slds-col slds-size_3-of-12 slds-box slds-theme_shade category-box">
-            <h1  class="slds-text-heading_small">Top 10 Products</h1>
-            <ul class="slds-has-block-links_space">
-                  <li>
-                    <a href="#">List Item</a>
-                  </li>
-                  <li>
-                    <a href="#">List Item</a>
-                  </li>
-            </ul>
-            <h1  class="slds-text-heading_small">Previous Buys</h1>
-            <ul class="slds-has-block-links_space">
-                  <li>
-                    <a href="#">List Item</a>
-                  </li>
-                  <li>
-                    <a href="#">List Item</a>
-                  </li>
-            </ul>
-
-        </div>
-        <div class="slds-col slds-size_9-of-12">
-            <div style="background-color: #0076d3; width:90%; padding-bottom:5px; padding-top:5px;">
-            <h1  class="slds-text-heading_small slds-text-align_center"> Bundle Products</h1>  </div>
-            <div style="margin-top: 18px;">
-             <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
-              <thead>
-                <tr class="slds-line-height_reset" >
-                  <th class="" scope="col" colspan="2">
-                    <div class="slds-truncate" title="Product Image" >Product Image</div>
+           <!-- <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+            <thead>
+              <tr class="slds-line-height_reset" >
+                <th class="" scope="col" colspan="2">
+                  <div class="slds-truncate" title="Product Image" >Product Image</div>
+                </th>
+                <th class="" scope="col" colspan="2">
+                    <div class="slds-truncate" title="Product Name" >Product Name</div>
                   </th>
                   <th class="" scope="col" colspan="2">
-                      <div class="slds-truncate" title="Product Name" >Product Name</div>
+                      <div class="slds-truncate" title="Charge Type" >Charge Type</div>
                     </th>
-                    <th class="" scope="col" colspan="2">
-                        <div class="slds-truncate" title="Charge Type" >Charge Type</div>
-                      </th>
-                  <th class="" scope="col" colspan="2">
-                    <div class="slds-truncate" title="Action" >Action</div>
-                  </th>
+                <th class="" scope="col" colspan="2">
+                  <div class="slds-truncate" title="Action" >Action</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Product Image" colspan="2">
+                            <div class="slds-truncate" title="dell"><img src="https://thumbs.dreamstime.com/z/laptop-computer-displaying-logo-dell-poznan-pol-jan-american-multinational-technology-company-develops-sells-repairs-172271225.jpg" width="100" height="100"></div>
+                    </td>
+                    <td data-label="Product Name" colspan="2">
+                        <div class="slds-truncate slds-text-heading_small" title="dell">Dell</div>
+                    </td>
+                    <td data-label="Charge Type" colspan="2">
+                      <div class="slds-truncate" title="dell">Test</div>
+                  </td>
+                    <td data-label="Action" colspan="2">
+                        <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                    </td>
                 </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td data-label="Product Image" colspan="2">
-                              <div class="slds-truncate" title="dell"><img src="https://thumbs.dreamstime.com/z/laptop-computer-displaying-logo-dell-poznan-pol-jan-american-multinational-technology-company-develops-sells-repairs-172271225.jpg" width="100" height="100"></div>
-                      </td>
-                      <td data-label="Product Name" colspan="2">
-                          <div class="slds-truncate slds-text-heading_small" title="dell">Dell</div>
-                      </td>
-                      <td data-label="Charge Type" colspan="2">
-                        <div class="slds-truncate" title="dell">Test</div>
+                <tr>
+                    <td data-label="Product Image" colspan="2">
+                            <div class="slds-truncate" title="dell"><img src="https://5.imimg.com/data5/SO/UH/MY-14352828/hp-laptop-500x500.jpg" width="100" height="100"></div>
                     </td>
-                      <td data-label="Action" colspan="2">
-                          <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td data-label="Product Image" colspan="2">
-                              <div class="slds-truncate" title="dell"><img src="https://5.imimg.com/data5/SO/UH/MY-14352828/hp-laptop-500x500.jpg" width="100" height="100"></div>
-                      </td>
-                      <td data-label="Product Name" colspan="2">
-                          <div class="slds-truncate slds-text-heading_small" title="hp">Hp</div>
-                      </td>
-                      <td data-label="Charge Type" colspan="2">
-                        <div class="slds-truncate " title="dell">Test</div>
+                    <td data-label="Product Name" colspan="2">
+                        <div class="slds-truncate slds-text-heading_small" title="hp">Hp</div>
                     </td>
-                      <td data-label="Action" colspan="2">
-                          <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
-                      </td>
-                  </tr>
-              </tbody>
-              </table>
-            </div>
-        </div>  
+                    <td data-label="Charge Type" colspan="2">
+                      <div class="slds-truncate " title="dell">Test</div>
+                  </td>
+                    <td data-label="Action" colspan="2">
+                        <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                    </td>
+                </tr>
+            </tbody>
+            </table> -->
+          </div>
+      </div>  
+
+  </div>
+
+
+
+
+
+
+  <div class="slds-grid catalog-cont">
+    <div class="slds-col slds-size_3-of-12 slds-box slds-theme_shade category-box">
+        <h1  class="slds-text-heading_small">Top 10 Products</h1>
+        <ul class="slds-has-block-links_space">
+              <li>
+                <a href="#">List Item</a>
+              </li>
+              <li>
+                <a href="#">List Item</a>
+              </li>
+        </ul>
+        <h1  class="slds-text-heading_small">Buy Again</h1>
+        <ul class="slds-has-block-links_space">
+              <li>
+                <a href="#">List Item</a>
+              </li>
+              <li>
+                <a href="#">List Item</a>
+              </li>
+        </ul>
 
     </div>
+    <div class="slds-col slds-size_9-of-12">
+        <div class="slds-box slds-theme_shade slds-theme_alert-texture" style="background-color: #1987db; width:90%; padding-bottom:5px; padding-top:5px;">
+        <h1  class="slds-text-heading_small slds-text-align_center"> Standalone Products</h1>  </div>
+        <div style="margin-top: 18px;">
+         <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+          <thead>
+            <tr class="slds-line-height_reset" >
+              <th class="" scope="col" colspan="2">
+                <div class="slds-truncate" title="Product Image" >Product Image</div>
+              </th>
+              <th class="" scope="col" colspan="2">
+                  <div class="slds-truncate" title="Product Name" >Product Name</div>
+                </th>
+                <th class="" scope="col" colspan="2">
+                    <div class="slds-truncate" title="Charge Type" >Charge Type</div>
+                  </th>
+              <th class="" scope="col" colspan="2">
+                <div class="slds-truncate" title="Action" >Action</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td data-label="Product Image" colspan="2">
+                          <div class="slds-truncate" title="dell"><img src="https://thumbs.dreamstime.com/z/laptop-computer-displaying-logo-dell-poznan-pol-jan-american-multinational-technology-company-develops-sells-repairs-172271225.jpg" width="100" height="100"></div>
+                  </td>
+                  <td data-label="Product Name" colspan="2">
+                      <div class="slds-truncate slds-text-heading_small" title="dell">Dell</div>
+                  </td>
+                  <td data-label="Charge Type" colspan="2">
+                    <div class="slds-truncate" title="dell">Test</div>
+                </td>
+                  <td data-label="Action" colspan="2">
+                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+
+                      <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                  </td>
+              </tr>
+              <tr>
+                  <td data-label="Product Image" colspan="2">
+                          <div class="slds-truncate" title="dell"><img src="https://5.imimg.com/data5/SO/UH/MY-14352828/hp-laptop-500x500.jpg" width="100" height="100"></div>
+                  </td>
+                  <td data-label="Product Name" colspan="2">
+                      <div class="slds-truncate slds-text-heading_small" title="hp">Hp</div>
+                  </td>
+                  <td data-label="Charge Type" colspan="2">
+                    <div class="slds-truncate " title="dell">Test</div>
+                </td>
+                  <td data-label="Action" colspan="2">
+                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+
+                      <div class="slds-truncate" title="Move to cart">
+                        
+                        <button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                  </td>
+              </tr>
+          </tbody>
+          </table>
+        </div>
+    </div> 
+    
+    
+
+    
+
+</div>
+
+
+
+
+<div class="slds-grid catalog-cont">
+  <div class="slds-col slds-size_3-of-12 category-box">
+      
+  </div>
+  <div class="slds-col slds-size_9-of-12">
+      <div class="slds-box slds-theme_shade slds-theme_alert-texture" style="background-color: #1987db; width:90%; padding-bottom:5px; padding-top:5px;">
+      <h1  class="slds-text-heading_small slds-text-align_center"> Bundle Products</h1>  </div>
+      <div style="margin-top: 18px;">
+       <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+        <thead>
+          <tr class="slds-line-height_reset" >
+            <th class="" scope="col" colspan="2">
+              <div class="slds-truncate" title="Product Image" >Product Image</div>
+            </th>
+            <th class="" scope="col" colspan="2">
+                <div class="slds-truncate" title="Product Name" >Product Name</div>
+              </th>
+              <th class="" scope="col" colspan="2">
+                  <div class="slds-truncate" title="Charge Type" >Charge Type</div>
+                </th>
+            <th class="" scope="col" colspan="2">
+              <div class="slds-truncate" title="Action" >Action</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Product Image" colspan="2">
+                        <div class="slds-truncate" title="dell"><img src="https://thumbs.dreamstime.com/z/laptop-computer-displaying-logo-dell-poznan-pol-jan-american-multinational-technology-company-develops-sells-repairs-172271225.jpg" width="100" height="100"></div>
+                </td>
+                <td data-label="Product Name" colspan="2">
+                    <div class="slds-truncate slds-text-heading_small" title="dell">Dell</div>
+                </td>
+                <td data-label="Charge Type" colspan="2">
+                  <div class="slds-truncate" title="dell">Test</div>
+              </td>
+                <td data-label="Action" colspan="2">
+                  <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+
+                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Product Image" colspan="2">
+                        <div class="slds-truncate" title="dell"><img src="https://5.imimg.com/data5/SO/UH/MY-14352828/hp-laptop-500x500.jpg" width="100" height="100"></div>
+                </td>
+                <td data-label="Product Name" colspan="2">
+                    <div class="slds-truncate slds-text-heading_small" title="hp">Hp</div>
+                </td>
+                <td data-label="Charge Type" colspan="2">
+                  <div class="slds-truncate " title="dell">Test</div>
+              </td>
+                <td data-label="Action" colspan="2">
+                  <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+
+                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+  </div> 
+  
+  
+
+  
+
+</div>
 </div>
 </template>
