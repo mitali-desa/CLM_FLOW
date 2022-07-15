@@ -1,19 +1,101 @@
+<!-- sldsValidatorIgnore -->
 <template>
-    <h1>Review</h1>
-    <lightning-button
-                    variant="brand"
-                       
-                        label="Next"
-                        class="slds-float_right"
-                        onclick={handleNext}
-                    >
-                </lightning-button>
-                <lightning-button
-                variant="brand"
-                   
-                    label="Back"
-                    class="slds-float_right"
-                    onclick={handleBack}
-                >
-            </lightning-button>
+    <!--Review Screen-->
+    <lightning-card>
+        <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-card>
+                    <div class="box">
+                        <h1>Email Details</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label class="slds-form-element__label" for="from">
+                                        <b>From</b></label>
+                                </td>
+                                <td>
+                                    <input type="text" size="8" id="from" class="slds-input" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="slds-form-element__label" for="to">
+                                        <b>To</b></label>
+                                </td>
+                                <td>
+                                    <input type="text" id="to" class="slds-input" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="slds-form-element__label" for="subject">
+                                        <b>Subject</b></label>
+                                </td>
+                                <td>
+                                    <input type="text" id="subject" class="slds-input" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="slds-form-element__label" for="email-template">
+                                        <b>Email Template</b></label>
+                                </td>
+                                <td align='center'>
+                                    <form><input class="buttonstyle" type=submit value="Email Template"></form>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="slds-form-element__label" for="body">
+                                        <b>Body</b></label>
+                                </td>
+                                <td>
+                                    <textarea id="body" class="slds-textarea"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </lightning-card>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-card>
+                    <div class="box1">
+                        <h1>Attachments</h1>
+
+                        <button class="slds-button slds-button_brand add-more-centered">Add More</button><br><br>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <label class="slds-form-element__label" for="file-name">
+                                        <b>File Name</b></label>
+                                </td>
+                                <td>
+                                    <input type="text" size="8" id="file-name" class="slds-input" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="slds-form-element__label" for="size">
+                                        <b>Size</b></label>
+                                </td>
+                                <td>
+                                    <input type="text" id="size" class="slds-input" />
+                                </td>
+                            </tr>
+                        </table>
+                        <button class="slds-button slds-button_brand center_button" onclick={handleNext}>Send for Review</button>
+                        <button class="slds-button slds-button_brand center_button1" onclick={handleBack}>Back</button>
+
+                    </div>
+                </lightning-card>
+            </div>
+        </div>
+    </lightning-card>
 </template>
