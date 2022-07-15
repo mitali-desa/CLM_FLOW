@@ -10,8 +10,15 @@ export default class TrailPage extends LightningElement {
     isReview;
     isSign;
 
+    isStandaloneType;
+
 
     main=1;
+
+    handleType(event){
+        console.log(event.detail.standalone)
+        this.isStandaloneType = event.detail.standalone
+    }
 
     handlePlay(){
         if(this.isOpportunity===true){

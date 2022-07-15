@@ -2,11 +2,33 @@ import { LightningElement } from 'lwc';
 
 export default class Catalog extends LightningElement {
     isStandalone;
+    handleType(event){
+
+        console.log(event.target.id)
+        let type = String(event.target.id)
+        if(type.includes('standalone')){
+            this.isStandalone=true
+
+        }
+        else{
+            this.isStandalone=false
+        }
+
+        const testEvent = CustomEvent('test',{
+            detail:{
+                standalone:this.isStandalone
+            }        
+         })
     
+         this.dispatchEvent(testEvent)
+
+         this.handleNext()
+        
+    }
+
     handleNext(){
-      //  alert(type);
         const screenEvent = CustomEvent('nextscreen',{
-            detail:'On next Screen'
+            detail:'On next Screen',
             
          })
     
@@ -20,16 +42,4 @@ export default class Catalog extends LightningElement {
     
          this.dispatchEvent(screenEvent)
       }
-      getProductType(event){
-        this.isStandalone = true
-        console.log('this is standalone' + this.isStandalone)
-        const screenEvent = CustomEvent('standalone',{
-            standalone : this.isStandalone 
-            
-         })
-    
-         this.dispatchEvent(screenEvent)
-         this.handleNext()
-
-    }
 }

@@ -1,52 +1,31 @@
 <template>
-      <div class="slds-hide">
-        <c-standalone-product-screen onstandalone={handleScreen}></c-standalone-product-screen>
-        <lightning-card>
-            <div class="slds-clearfix"> 
+    <div if:true={product}>
+      <c-standalone-product-screen></c-standalone-product-screen>
+    </div>
+    <div if:false={product}>
+      <c-bundle-product></c-bundle-product>
+  
+    </div>
+  
+    <lightning-card>   
+      <div class="slds-clearfix"> 
+          <lightning-button
+          variant="brand"
+              label="Back"
+              class="slds-float_left slds-m-left_large"
+              onclick={handleBack}
+          >
+          </lightning-button>
+          
                 <lightning-button
                 variant="brand"
-                    label="Back"
-                    class="slds-float_left slds-m-left_large"
-                    onclick={handleBack}
-                >
-                </lightning-button>
-                
-                      <lightning-button
-                      variant="brand"
-                          
-                          name="Next"
-                          label="Next"
-                          class="slds-float_right slds-m-right_large"
-                          onclick={handleNext}
-                      >
-                  </lightning-button>
-              </div>
-           </lightning-card>
-        </div>
-         <div>
-             <c-bundle-product></c-bundle-product>
-            
-             <lightning-card>   
-                <div class="slds-clearfix"> 
-                    <lightning-button
-                    variant="brand"
-                        label="Back"
-                        class="slds-float_left slds-m-left_large"
-                        onclick={handleBack}
-                    >
-                    </lightning-button>
                     
-                          <lightning-button
-                          variant="brand"
-                              
-                              name="Next"
-                              label="Next"
-                              class="slds-float_right slds-m-right_large"
-                              onclick={handleNext}
-                          >
-                      </lightning-button>
-                  </div>
-                </lightning-card>
-          </div>
-        
-</template>
+                    name="Next"
+                    label="Next"
+                    class="slds-float_right slds-m-right_large"
+                    onclick={handleNext}
+                >
+            </lightning-button>
+        </div>
+      </lightning-card>
+  </template>
