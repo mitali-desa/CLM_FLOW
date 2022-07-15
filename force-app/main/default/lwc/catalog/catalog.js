@@ -1,7 +1,10 @@
 import { LightningElement } from 'lwc';
 
 export default class Catalog extends LightningElement {
+    isStandalone;
+    
     handleNext(){
+      //  alert(type);
         const screenEvent = CustomEvent('nextscreen',{
             detail:'On next Screen'
             
@@ -17,4 +20,16 @@ export default class Catalog extends LightningElement {
     
          this.dispatchEvent(screenEvent)
       }
+      getProductType(event){
+        this.isStandalone = true
+        console.log('this is standalone' + this.isStandalone)
+        const screenEvent = CustomEvent('standalone',{
+            standalone : this.isStandalone 
+            
+         })
+    
+         this.dispatchEvent(screenEvent)
+         this.handleNext()
+
+    }
 }

@@ -1,16 +1,51 @@
 <template>
+      <div class="slds-hide">
+        <c-standalone-product-screen onstandalone={handleScreen}></c-standalone-product-screen>
+        <lightning-card>
+            <div class="slds-clearfix"> 
+                <lightning-button
+                variant="brand"
+                    label="Back"
+                    class="slds-float_left slds-m-left_large"
+                    onclick={handleBack}
+                >
+                </lightning-button>
+                
+                      <lightning-button
+                      variant="brand"
+                          
+                          name="Next"
+                          label="Next"
+                          class="slds-float_right slds-m-right_large"
+                          onclick={handleNext}
+                      >
+                  </lightning-button>
+              </div>
+           </lightning-card>
+        </div>
          <div>
              <c-bundle-product></c-bundle-product>
-             <lightning-card>
+            
+             <lightning-card>   
                 <div class="slds-clearfix"> 
-                        <lightning-button
-                            variant="brand"
-                                label="Back"
-                                class="slds-align_absolute-center"
-                                onclick={handleBack}
-                            >
-                        </lightning-button>
-                </div>
+                    <lightning-button
+                    variant="brand"
+                        label="Back"
+                        class="slds-float_left slds-m-left_large"
+                        onclick={handleBack}
+                    >
+                    </lightning-button>
+                    
+                          <lightning-button
+                          variant="brand"
+                              
+                              name="Next"
+                              label="Next"
+                              class="slds-float_right slds-m-right_large"
+                              onclick={handleNext}
+                          >
+                      </lightning-button>
+                  </div>
                 </lightning-card>
           </div>
         

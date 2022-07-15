@@ -1,7 +1,11 @@
 import { LightningElement } from 'lwc';
 
 export default class Productconfig extends LightningElement {
-   
+    handleScreen(){
+        console.log('this is new screen ')
+        
+    }
+    
       handleBack(){
         const screenEvent = CustomEvent('backscreen',{
             detail:'On back Screen'
@@ -10,6 +14,16 @@ export default class Productconfig extends LightningElement {
         
          this.dispatchEvent(screenEvent)
       }
+
+      handleNext(){
+        //  alert(type);
+          const screenEvent = CustomEvent('nextscreen',{
+              detail:'On next Screen'
+              
+           })
+      
+           this.dispatchEvent(screenEvent)
+        }
 
      /* showBundle(){
             var divblock = this.template.querySelector('[data-id="bundleListItem"]');

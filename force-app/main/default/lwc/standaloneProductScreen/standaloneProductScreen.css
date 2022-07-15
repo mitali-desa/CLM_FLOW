@@ -1,0 +1,36 @@
+h1 {
+    font-size: medium;
+    display: block;
+    background: rgb(151, 213, 245);
+    text-align: center;
+}
+
+.rightside-button {
+    position: absolute;
+    top: 65px;
+    right: 2%;
+}
+
+.rightside-button1 {
+    position: absolute;
+    bottom: 30px;
+    right: 2%;
+}
+
+.leftside-button {
+    position: absolute;
+    top: 65px;
+    right: 42.5%;
+}
+
+.leftside-button1 {
+    position: absolute;
+    bottom: 30px;
+    right: 42.5%;
+}
+
+.middle-button {
+    position: absolute;
+    bottom: 30px;
+    right: 21%;
+}
