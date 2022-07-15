@@ -1,0 +1,338 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <!--Standalone Product Screen-->
+    <lightning-card if:true={standaloneProductCreation}>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-2">
+                <h1>Selected Standalone Product List</h1>
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped"
+                    aria-label="Example table of Opportunities with striped rows">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Product Name">Product Name</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Product Code">Product Code</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Price">Price</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Action">Action</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="slds-hint-parent">
+                            <th data-label="Product Name" scope="row">
+                                <div class="slds-truncate" title="Apple">
+                                    <a href="#" tabindex="-1">Apple</a>
+                                </div>
+                            </th>
+                            <td data-label="Product Code">
+                                <div class="slds-truncate" title="A001">A001</div>
+                            </td>
+                            <td data-label="Price">
+                                <div class="slds-truncate" title="40">40</div>
+                            </td>
+                            <td data-label="Action" align='center'>
+                                <form><input class="buttonstyle" type=submit value="-1+"></form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th data-label="Product Name" scope="row">
+                                <div class="slds-truncate" title="Orange">
+                                    <a href="#" tabindex="-1">Orange</a>
+                                </div>
+                            </th>
+                            <td data-label="Product Code">
+                                <div class="slds-truncate" title="O001">O001</div>
+                            </td>
+                            <td data-label="Price">
+                                <div class="slds-truncate" title="60">60</div>
+                            </td>
+                            <td data-label="Action" align='center'>
+                                <form><input class="buttonstyle" type=submit value="-1+"></form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th data-label="Product Name" scope="row">
+                                <div class="slds-truncate" title="Mango">
+                                    <a href="#" tabindex="-1">Mango</a>
+                                </div>
+                            </th>
+                            <td data-label="Product Code">
+                                <div class="slds-truncate" title="M001">M001</div>
+                            </td>
+                            <td data-label="Price">
+                                <div class="slds-truncate" title="80">80</div>
+                            </td>
+                            <td data-label="Action" align='center'>
+                                <form><input class="buttonstyle" type=submit value="-1+"></form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><br><br>
+
+            <div class="slds-col slds-size_1-of-2">
+                <h1>Summary</h1>
+                <button class="slds-button slds-button_brand leftside-button">Add Items</button>
+                <button class="slds-button slds-button_brand rightside-button">Delete/Exit</button>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <h1>Similar Products</h1>
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped"
+                    aria-label="Example table of Opportunities with striped rows">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Product Name">Product Name</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Product Code">Product Code</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Product Image">Product Image</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Price">Price</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Action">Action</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="slds-hint-parent">
+                            <th data-label="Product Name" scope="row">
+                                <div class="slds-truncate" title="Apple">
+                                    <a href="#" tabindex="-1">Apple</a>
+                                </div>
+                            </th>
+                            <td data-label="Product Code">
+                                <div class="slds-truncate" title="A001">A001</div>
+                            </td>
+                            <td data-label="Product Image">
+                                <img src="https://image.shutterstock.com/image-photo/red-apple-isolated-on-white-260nw-1727544364.jpg" alt="Apple" width="80" height="80">
+                            </td>
+                            <td data-label="Price">
+                                <div class="slds-truncate" title="40">40</div>
+                            </td>
+                            <td data-label="Action" align='center'>
+                                <form><input class="buttonstyle" type=submit value="-1+"></form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th data-label="Product Name" scope="row">
+                                <div class="slds-truncate" title="Orange">
+                                    <a href="#" tabindex="-1">Orange</a>
+                                </div>
+                            </th>
+                            <td data-label="Product Code">
+                                <div class="slds-truncate" title="O001">O001</div>
+                            </td>
+                            <td data-label="Product Image">
+                                <img src="https://media.istockphoto.com/photos/orange-picture-id185284489?k=20&m=185284489&s=170667a&w=0&h=e8ZoHukToTFk2s0EqVBiZxdCs1EIKNGzT865MKU45Es=" alt="Orange" width="80" height="80">
+                            </td>
+                            <td data-label="Price">
+                                <div class="slds-truncate" title="60">60</div>
+                            </td>
+                            <td data-label="Action" align='center'>
+                                <form><input class="buttonstyle" type=submit value="-1+"></form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th data-label="Product Name" scope="row">
+                                <div class="slds-truncate" title="Mango">
+                                    <a href="#" tabindex="-1">Mango</a>
+                                </div>
+                            </th>
+                            <td data-label="Product Code">
+                                <div class="slds-truncate" title="M001">M001</div>
+                            </td>
+                            <td data-label="Product Image">
+                                <img src="https://thumbs.dreamstime.com/b/mango-ripe-white-background-35283521.jpg" alt="Mango" width="80" height="80">
+                            </td>
+                            <td data-label="Price">
+                                <div class="slds-truncate" title="80">80</div>
+                            </td>
+                            <td data-label="Action" align='center'>
+                                <form><input class="buttonstyle" type=submit value="-1+"></form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><br><br>
+
+            <div class="slds-col slds-size_1-of-2">
+                <h1>Mini Cart</h1>
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped"
+                    aria-label="Example table of Opportunities with striped rows">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Product Name">Product Name</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Product Code">Product Code</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Price">Price</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Action">Action</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="slds-hint-parent">
+                            <th data-label="Product Name" scope="row">
+                                <div class="slds-truncate" title="Apple">
+                                    <a href="#" tabindex="-1">Apple</a>
+                                </div>
+                            </th>
+                            <td data-label="Product Code">
+                                <div class="slds-truncate" title="A001">A001</div>
+                            </td>
+                            <td data-label="Price">
+                                <div class="slds-truncate" title="40">40</div>
+                            </td>
+                            <td data-label="Action" align='center'>
+                                <form><input class="buttonstyle" type=submit value="-1+"></form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th data-label="Product Name" scope="row">
+                                <div class="slds-truncate" title="Orange">
+                                    <a href="#" tabindex="-1">Orange</a>
+                                </div>
+                            </th>
+                            <td data-label="Product Code">
+                                <div class="slds-truncate" title="O001">O001</div>
+                            </td>
+                            <td data-label="Price">
+                                <div class="slds-truncate" title="60">60</div>
+                            </td>
+                            <td data-label="Action" align='center'>
+                                <form><input class="buttonstyle" type=submit value="-1+"></form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th data-label="Product Name" scope="row">
+                                <div class="slds-truncate" title="Mango">
+                                    <a href="#" tabindex="-1">Mango</a>
+                                </div>
+                            </th>
+                            <td data-label="Product Code">
+                                <div class="slds-truncate" title="M001">M001</div>
+                            </td>
+                            <td data-label="Price">
+                                <div class="slds-truncate" title="80">80</div>
+                            </td>
+                            <td data-label="Action" align='center'>
+                                <form><input class="buttonstyle" type=submit value="-1+"></form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="slds-col slds-size_1-of-2">
+                <h1>Previous Orders</h1>
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped"
+                    aria-label="Example table of Opportunities with striped rows">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Product Name">Product Name</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Product Code">Product Code</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Product Image">Product Image</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Price">Price</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Action">Action</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="slds-hint-parent">
+                            <th data-label="Product Name" scope="row">
+                                <div class="slds-truncate" title="Apple">
+                                    <a href="#" tabindex="-1">Apple</a>
+                                </div>
+                            </th>
+                            <td data-label="Product Code">
+                                <div class="slds-truncate" title="A001">A001</div>
+                            </td>
+                            <td data-label="Product Image">
+                                <img src="https://image.shutterstock.com/image-photo/red-apple-isolated-on-white-260nw-1727544364.jpg"
+                                    alt="Apple" width="80" height="80">
+                            </td>
+                            <td data-label="Price">
+                                <div class="slds-truncate" title="40">40</div>
+                            </td>
+                            <td data-label="Action" align='center'>
+                                <form><input class="buttonstyle" type=submit value="-1+"></form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th data-label="Product Name" scope="row">
+                                <div class="slds-truncate" title="Orange">
+                                    <a href="#" tabindex="-1">Orange</a>
+                                </div>
+                            </th>
+                            <td data-label="Product Code">
+                                <div class="slds-truncate" title="O001">O001</div>
+                            </td>
+                            <td data-label="Product Image">
+                                <img src="https://media.istockphoto.com/photos/orange-picture-id185284489?k=20&m=185284489&s=170667a&w=0&h=e8ZoHukToTFk2s0EqVBiZxdCs1EIKNGzT865MKU45Es="
+                                    alt="Orange" width="80" height="80">
+                            </td>
+                            <td data-label="Price">
+                                <div class="slds-truncate" title="60">60</div>
+                            </td>
+                            <td data-label="Action" align='center'>
+                                <form><input class="buttonstyle" type=submit value="-1+"></form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th data-label="Product Name" scope="row">
+                                <div class="slds-truncate" title="Mango">
+                                    <a href="#" tabindex="-1">Mango</a>
+                                </div>
+                            </th>
+                            <td data-label="Product Code">
+                                <div class="slds-truncate" title="M001">M001</div>
+                            </td>
+                            <td data-label="Product Image">
+                                <img src="https://thumbs.dreamstime.com/b/mango-ripe-white-background-35283521.jpg" alt="Mango"
+                                    width="80" height="80">
+                            </td>
+                            <td data-label="Price">
+                                <div class="slds-truncate" title="80">80</div>
+                            </td>
+                            <td data-label="Action" align='center'>
+                                <form><input class="buttonstyle" type=submit value="-1+"></form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <h1>Total :</h1>
+                <button class="slds-button slds-button_brand ">Favourite</button>
+                <button class="slds-button slds-button_brand middle-button">Next</button>
+                <button class="slds-button slds-button_brand rightside-button1">Save</button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

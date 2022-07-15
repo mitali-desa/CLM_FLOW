@@ -107,13 +107,14 @@
               </div>
               <hr>
               <div class="slds-clearfix"> 
-                  <lightning-button
-                  variant="brand"  
-                  type="cancel"
-                  name="cancel"
-                  label="Cancel"
-                  >
-                  </lightning-button>
+                <lightning-button
+                variant="brand"
+                    label="Back"
+                    class="slds-float_left"
+                    onclick={handleBack}
+                >
+                </lightning-button>
+                
                       <lightning-button
                       variant="brand"
                           type="submit"

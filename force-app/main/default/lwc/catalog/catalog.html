@@ -53,9 +53,9 @@
                   </div>
                   <div class="slds-card__body slds-card__body_inner">Anything can go into the card body</div>
                   <footer class="slds-card__footer">
-                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={handleNext}>Configure</button></div>
 
-                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" >Add To Cart</button></div>
                   </footer>
                   </article>
               </div>
@@ -72,9 +72,9 @@
                   </div>
                   <div class="slds-card__body slds-card__body_inner">Anything can go into the card body</div>
                   <footer class="slds-card__footer">
-                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={handleNext}>Configure</button></div>
 
-                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand">Add To Cart</button></div>
                   </footer>
                   </article>
               </div>
@@ -91,9 +91,9 @@
                   </div>
                   <div class="slds-card__body slds-card__body_inner">Anything can go into the card body</div>
                   <footer class="slds-card__footer">
-                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={handleNext}>Configure</button></div>
 
-                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand">Add To Cart</button></div>
                   </footer>
                   </article>
               </div>
@@ -110,9 +110,9 @@
                   </div>
                   <div class="slds-card__body slds-card__body_inner">Anything can go into the card body</div>
                   <footer class="slds-card__footer">
-                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={handleNext}>Configure</button></div>
 
-                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand">Add To Cart</button></div>
                   </footer>
                   </article>
               </div>
@@ -232,9 +232,8 @@
                     <div class="slds-truncate" title="dell">Test</div>
                 </td>
                   <td data-label="Action" colspan="2">
-                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
-
-                      <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart" data-id="standalone"><button class="slds-button slds-button_destructive" name="standalone" onclick={getProductType}>Configure</button></div>
+                      <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand">Add To Cart</button></div>
                   </td>
               </tr>
               <tr>
@@ -248,11 +247,11 @@
                     <div class="slds-truncate " title="dell">Test</div>
                 </td>
                   <td data-label="Action" colspan="2">
-                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+                    <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={handleNext}>Configure</button></div>
 
                       <div class="slds-truncate" title="Move to cart">
                         
-                        <button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                        <button class="slds-button slds-button_brand">Add To Cart</button></div>
                   </td>
               </tr>
           </tbody>
@@ -306,9 +305,9 @@
                   <div class="slds-truncate" title="dell">Test</div>
               </td>
                 <td data-label="Action" colspan="2">
-                  <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+                  <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={handleNext}>Configure</button></div>
 
-                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand">Add To Cart</button></div>
                 </td>
             </tr>
             <tr>
@@ -322,9 +321,9 @@
                   <div class="slds-truncate " title="dell">Test</div>
               </td>
                 <td data-label="Action" colspan="2">
-                  <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
+                  <div style="margin-bottom:10px;" class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={handleNext}>Configure</button></div>
 
-                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand" onclick={handleNext}>Add To Cart</button></div>
+                    <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_brand">Add To Cart</button></div>
                 </td>
             </tr>
         </tbody>

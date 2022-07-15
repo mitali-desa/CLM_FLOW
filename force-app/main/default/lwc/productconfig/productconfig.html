@@ -1,70 +1,33 @@
 <template>
-    <div class="slds-p-top_xx-large" data-id="bundleList">
-        <article class="slds-card slds-border_left slds-m-left_large  slds-m-right_large slds-m-bottom_large" style="border: 1px ridge !important;">
-          <div class="slds-card__header slds-grid">
-          <header class="slds-media slds-media_center slds-has-flexi-truncate">
-          <div class="slds-media__figure">
-          <span class="slds-icon_container slds-icon-standard-account" title="account">
-          </span>
-          </div>
-          <div class="slds-media__body">
-          <h2 class="slds-card__header-title">
-          <span class="slds-align_absolute-center">Configure Bundle Products</span>
-          </h2>
-          </div>
-          </header>
-          </div>
-          <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
-              <thead>
-                <tr class="slds-line-height_reset" >
-                  <th class="" scope="col" colspan="2">
-                    <div class="slds-truncate" title="Product Image" >Product Image</div>
-                  </th>
-                  <th class="" scope="col" colspan="2">
-                      <div class="slds-truncate" title="Product Name" >Product Name</div>
-                    </th>
-                  <th class="" scope="col" colspan="2">
-                    <div class="slds-truncate" title="Action" >Action</div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td data-label="Product Image" colspan="2">
-                              <div class="slds-truncate" title="dell"><img src="https://thumbs.dreamstime.com/z/laptop-computer-displaying-logo-dell-poznan-pol-jan-american-multinational-technology-company-develops-sells-repairs-172271225.jpg" width="100" height="100"></div>
-                      </td>
-                      <td data-label="Product Name" colspan="2">
-                          <div class="slds-truncate" title="dell">Dell</div>
-                      </td>
-                      <td data-label="Action" colspan="2">
-                          <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td data-label="Product Image" colspan="2">
-                              <div class="slds-truncate" title="dell"><img src="https://5.imimg.com/data5/SO/UH/MY-14352828/hp-laptop-500x500.jpg" width="100" height="100"></div>
-                      </td>
-                      <td data-label="Product Name" colspan="2">
-                          <div class="slds-truncate" title="hp">Hp</div>
-                      </td>
-                      <td data-label="Action" colspan="2">
-                          <div class="slds-truncate" title="Move to cart"><button class="slds-button slds-button_destructive" onclick={showBundle}>Configure</button></div>
-                      </td>
-                  </tr>
-              </tbody>
-              </table>
-          <footer class="slds-card__footer">
-          </footer>
-          </article>
-          <lightning-card>
+      <div class="slds-hide">
+        <c-standalone-product-screen onstandalone={handleScreen}></c-standalone-product-screen>
+        <lightning-card>
             <div class="slds-clearfix"> 
-                    <lightning-button
-                        variant="brand"
-                            label="Next"
-                            class="slds-float_right slds-m-right_large"
-                            onclick={handleNext}
-                        >
-                    </lightning-button>
+                <lightning-button
+                variant="brand"
+                    label="Back"
+                    class="slds-float_left slds-m-left_large"
+                    onclick={handleBack}
+                >
+                </lightning-button>
+                
+                      <lightning-button
+                      variant="brand"
+                          
+                          name="Next"
+                          label="Next"
+                          class="slds-float_right slds-m-right_large"
+                          onclick={handleNext}
+                      >
+                  </lightning-button>
+              </div>
+           </lightning-card>
+        </div>
+         <div>
+             <c-bundle-product></c-bundle-product>
+            
+             <lightning-card>   
+                <div class="slds-clearfix"> 
                     <lightning-button
                     variant="brand"
                         label="Back"
@@ -72,21 +35,17 @@
                         onclick={handleBack}
                     >
                     </lightning-button>
-            </div>
-            </lightning-card>
-          </div>
-          <div class="slds-hide" data-id="bundleListItem">
-             <c-bundle-product></c-bundle-product>
-             <lightning-card>
-                <div class="slds-clearfix"> 
-                        <lightning-button
-                            variant="brand"
-                                label="Back"
-                                class="slds-align_absolute-center"
-                                onclick={handleBackBundle}
-                            >
-                        </lightning-button>
-                </div>
+                    
+                          <lightning-button
+                          variant="brand"
+                              
+                              name="Next"
+                              label="Next"
+                              class="slds-float_right slds-m-right_large"
+                              onclick={handleNext}
+                          >
+                      </lightning-button>
+                  </div>
                 </lightning-card>
           </div>
         
