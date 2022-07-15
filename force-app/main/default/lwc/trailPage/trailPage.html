@@ -4,11 +4,11 @@
     <c-trail name={main} ></c-trail>
     <c-opportunity if:true={isOpportunity}  onnextscreen={handlePlay} ></c-opportunity>
     <c-agreement if:true={isAgreement}  onnextscreen={handlePlay} onbackscreen={handleBack} ></c-agreement>
-    <c-catalog if:true={isCatalog}  onnextscreen={handlePlay} onbackscreen={handleBack} ></c-catalog>
-    <c-productconfig if:true={isProductConfig}  onnextscreen={handlePlay} onbackscreen={handleBack} ></c-productconfig>
+    <c-catalog if:true={isCatalog}  onnextscreen={handlePlay} onbackscreen={handleBack} ontest={handleType}  ></c-catalog>
+    <c-productconfig if:true={isProductConfig}  onnextscreen={handlePlay} onbackscreen={handleBack} product={isStandaloneType} ></c-productconfig>
     <c-cart if:true={isCart}  onnextscreen={handlePlay} onbackscreen={handleBack} ></c-cart>
     <c-summary if:true={isSummary} onnextscreen={handlePlay} onskipscreen={handleSkip} onbackscreen={handleBack} ></c-summary>
-    <c-review if:true={isReview}  onnextscreen={handlePlay}  onbackscreen={handleBack}></c-review>
-    <c-signature if:true={isSign} onnextscreen={handlePlay} onbackscreen={handleBack}></c-signature>
+    <c-review if:true={isReview}  onnextscreen={handlePlay}  onbackscreen={handleBack} ></c-review>
+    <c-signatures if:true={isSign} onnextscreen={handlePlay} onbackscreen={handleBack}></c-signatures>
     </div>
 </template>
