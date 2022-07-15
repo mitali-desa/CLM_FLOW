@@ -1,0 +1,74 @@
+h1 {
+    font-size: medium;
+    display: block;
+    background: rgb(151, 213, 245);
+    text-align: left;
+}
+
+input {
+    width: 70%;
+}
+
+textarea {
+    width: 70%;
+}
+
+select {
+    width: 70%;
+}
+
+tr,
+td {
+    padding: 15px;
+}
+
+.rightside-button {
+    position: absolute;
+    bottom: 10px;
+    right: 2%;
+}
+
+.leftside-button {
+    position: absolute;
+    bottom: 10px;
+    left: 2%;
+}
+
+.center_button {
+    position: absolute;
+    bottom: 10px;
+    /* left: 68%; */
+    right: 10px;
+}
+
+.center_button1 {
+    position: absolute;
+    bottom: 10px;
+    /* left: 68%; */
+    right: 88%;
+}
+
+.add-more-centered {
+    position: absolute;
+    right: 10px;
+}
+
+.box {
+    border: 2px solid black;
+}
+
+.box1 {
+    border: 2px solid black;
+    height: 417px;
+}
+
+.buttonstyle {
+    background-color: rgb(46, 132, 237);
+    border-radius: 3px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
